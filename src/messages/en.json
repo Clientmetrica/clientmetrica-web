@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "AI Agents for companies built to grow",
+    "cta": "Explore our products"
+  },
+  "products": {
+    "maty": "MATY",
+    "juanito": "Juanito",
+    "roboto": "Roboto"
+  }
+}

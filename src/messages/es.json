@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "Agentes de IA para empresas que quieren crecer",
+    "cta": "Conoce nuestros productos"
+  },
+  "products": {
+    "maty": "MATY",
+    "juanito": "Juanito",
+    "roboto": "Roboto"
+  }
+}
