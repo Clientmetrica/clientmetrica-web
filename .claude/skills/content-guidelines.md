@@ -57,19 +57,12 @@ Never refer to them generically as "the bot" or "the tool" — they are AI Agent
 
 ## Page-level tone guidelines
 
-| Page | Tone |
-| ---- | ---- |
-| Homepage | Bold, confident, outcome-focused |
+| Page                                  | Tone                                |
+| ------------------------------------- | ----------------------------------- |
+| Homepage                              | Bold, confident, outcome-focused    |
 | Product pages (MATY, Juanito, Roboto) | Specific, use-case driven, credible |
-| About (Nosotros) | Human, strategic, trust-building |
-| Contact | Clear, low-friction, direct |
-
-## SEO copywriting
-
-- Page titles: descriptive, include primary keyword, under 60 chars
-- Meta descriptions: benefit-led, under 155 chars, include a soft CTA
-- Headings: one H1 per page, H2s for sections, H3s for subsections
-- Avoid keyword stuffing — write for humans first
+| About (Nosotros)                      | Human, strategic, trust-building    |
+| Contact                               | Clear, low-friction, direct         |
 
 ## Company facts (always accurate)
 

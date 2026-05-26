@@ -27,8 +27,8 @@ No test runner is configured yet.
 **Async Request APIs** — `cookies()`, `headers()`, `draftMode()`, `params`, and `searchParams` are fully async. Synchronous access is removed. Always `await` them:
 
 ```tsx
-export default async function Page(props: PageProps<'/blog/[slug]'>) {
-  const { slug } = await props.params
+export default async function Page(props: PageProps<"/blog/[slug]">) {
+  const { slug } = await props.params;
 }
 ```
 
@@ -65,9 +65,11 @@ Detailed standards live in `.claude/skills/`. Key rules to apply without being t
 
 ### Design & styling
 
+Full brand reference: `.claude/skills/cm-brand-guidelines.md` (colors, gradients, typography, logo rules, photography, web components, accessibility).
+
 - **Always use brand tokens** — never raw hex values (`bg-brand-orange`, not `bg-[#F75F23]`)
 - Brand palette: `brand-orange` (#F75F23) · `brand-navy` (#12145F) · `brand-duotone1` · `brand-duotone2` · `brand-sky` · `brand-dark`
-- Typography: `font-heading` (Futura PT) for headings, `font-body` (Inter) for body
+- Typography: `font-heading` (Futura PT — self-hosted, paid) for headings, `font-body` (Inter) for body
 - Buttons: primary = `bg-brand-orange text-white`, secondary = `border-brand-navy text-brand-navy`
 - Section padding: `py-16` or `py-24`; max content width: `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`
 
