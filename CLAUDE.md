@@ -14,6 +14,8 @@ npm run lint     # ESLint (uses eslint CLI directly, not next lint)
 
 No test runner is configured yet.
 
+See [docs/architecture.md](docs/architecture.md) for the full site structure and page inventory.
+
 ## Stack
 
 - **Next.js 16.2.6** — App Router only. Read `node_modules/next/dist/docs/` before writing any Next.js code.
