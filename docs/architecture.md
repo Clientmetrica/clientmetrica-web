@@ -850,10 +850,11 @@ src/components/
 
 ## Supporting Docs
 
-| File                                            | Contents                                   |
-| ----------------------------------------------- | ------------------------------------------ |
-| `docs/clientmetrica_page_architecture.svg`      | Visual sitemap                             |
-| `docs/clientmetrica_contact_funnel.svg`         | Contact funnel flow diagram                |
-| `docs/clientmetrica_product_page_template.html` | Design reference for product page sections |
-| `.claude/skills/cm-brand-guidelines.md`         | Full brand token and style reference       |
-| `.claude/skills/front-coding-standards.md`      | Coding conventions                         |
+| File                                            | Contents                                                    |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| `docs/team-coordination.md`                     | Role ownership, handoff protocols, timelines, quality gates |
+| `docs/clientmetrica_page_architecture.svg`      | Visual sitemap                                              |
+| `docs/clientmetrica_contact_funnel.svg`         | Contact funnel flow diagram                                 |
+| `docs/clientmetrica_product_page_template.html` | Design reference for product page sections                  |
+| `.claude/skills/cm-brand-guidelines.md`         | Full brand token and style reference                        |
+| `.claude/skills/front-coding-standards.md`      | Coding conventions                                          |
