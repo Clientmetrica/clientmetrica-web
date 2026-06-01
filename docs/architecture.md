@@ -604,24 +604,14 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 **Pages**
 
-- [ ] **Build Homepage** (`[locale]/page.tsx`) — 5 sections (Hero, Products, Why, Social proof, CTA)
-- [ ] **Build Products overview** (`[locale]/productos/page.tsx`) — unified hero, AI Agents section, Cybersecurity section (TBD), optional comparison, CTA
-  - AI Agents: 3-card grid (MATY, Juanito, Roboto)
-  - Cybersecurity: 1-card placeholder (pending product definition)
-  - Use `ProductCategorySection` component for both categories
-- [ ] **Build About page** (`[locale]/nosotros/page.tsx`) — 4 sections (Hero, Mission, Team optional, Values)
-- [ ] **Add `juanito` and `roboto` product data files** — currently fall back to MATY
-  - Create `src/data/products/juanito.es.ts`, `juanito.en.ts`, `roboto.es.ts`, `roboto.en.ts`
-  - Update `src/data/products/index.ts` to import them (uncomment)
-  - Add `{ product: "juanito" }` and `{ product: "roboto" }` to `generateStaticParams()`
+- [x] **Build Homepage** (`[locale]/page.tsx`) — HomepageHero (navy bg + orange gradient), HomepageProducts (3-card grid pulling from product data), HomepageWhy (4 differentiators), HomepageCTA; HomepageSocialProof deferred until first client testimonial
+- [x] **Build Products overview** (`[locale]/productos/page.tsx`) — ProductsOverviewHero, ProductCategorySection (reusable for AI Agents + Cybersecurity; cybersecurity shows placeholder card), ProductCTA
+- [x] **Build About page** (`[locale]/nosotros/page.tsx`) — AboutHero, AboutMission, AboutValues (4 values with Lucide icons), ProductCTA reused; AboutTeam deferred to v2
+- [x] **Add `juanito` and `roboto` product data files** — all 4 locale files created with distinct positioning (Juanito=sales/CRM, Roboto=data/reporting); `products/index.ts` updated with real imports; all marked TODO for Marketing finalisation
 
 **i18n & Copy**
 
-- [ ] **Add translation keys** to `src/messages/es.json` and `en.json`:
-  - `homepage.*` — homepage sections
-  - `products-overview.*` — products overview page
-  - `about.*` — about page sections
-  - `contact.*` — contact form labels (migrate from `ContactFunnel` inline copy)
+- [x] **Add translation keys** to `src/messages/es.json` and `en.json` — `homepage.*`, `products-overview.*`, `about.*`, `contact.*` namespaces all added
 - [ ] **Replace placeholder copy** in product data files (`src/data/products/*.ts`) with final Marketing copy
 - [ ] **Replace ROI numbers** with real data from CEO — must be defensible before launch
 
@@ -634,10 +624,10 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 **SEO & Metadata**
 
-- [ ] **Add `sitemap.ts`** — Next.js built-in XML sitemap generation
-- [ ] **Add `robots.ts`** — search engine directives
+- [x] **Add `sitemap.ts`** — all P1 routes included with hreflang alternates and priority weights
+- [x] **Add `robots.ts`** — allows all, disallows `/api/`, points to sitemap
 - [ ] **Add Open Graph images** — per-page `opengraph-image.tsx` (follows Next.js convention)
-- [ ] **Verify `hreflang` alternates** — ensure they're in `[locale]/layout.tsx` metadata
+- [x] **Verify `hreflang` alternates** — set in `[locale]/layout.tsx` generateMetadata; also per-page where applicable (e.g. nosotros/about)
 
 ---
 

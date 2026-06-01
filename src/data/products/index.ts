@@ -7,18 +7,17 @@
 import type { ProductPageContent, ProductSlug } from "@/types/product";
 import { matyEs } from "./maty.es";
 import { matyEn } from "./maty.en";
-// TODO: add juanito.es, juanito.en, roboto.es, roboto.en once copy is ready
+import { juanitoEs } from "./juanito.es";
+import { juanitoEn } from "./juanito.en";
+import { robotoEs } from "./roboto.es";
+import { robotoEn } from "./roboto.en";
 
 type LocaleMap = Record<string, ProductPageContent>;
 
 const PRODUCTS: Record<ProductSlug, LocaleMap> = {
   maty: { es: matyEs, en: matyEn },
-  // juanito: { es: juanitoEs, en: juanitoEn },
-  // roboto:  { es: robotoEs,  en: robotoEn  },
-
-  // Temporary fallbacks so the route doesn't 404 during dev
-  juanito: { es: matyEs, en: matyEn },
-  roboto: { es: matyEs, en: matyEn },
+  juanito: { es: juanitoEs, en: juanitoEn },
+  roboto: { es: robotoEs, en: robotoEn },
 };
 
 /**

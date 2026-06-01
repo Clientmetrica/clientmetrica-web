@@ -12,5 +12,88 @@
     "maty": "MATY",
     "juanito": "Juanito",
     "roboto": "Roboto"
+  },
+  "homepage": {
+    "hero": {
+      "tagline": "Automatización con IA",
+      "headline": "Tu operación escala. Tu equipo no.",
+      "subheadline": "MATY, Juanito y Roboto son agentes de IA que automatizan lo repetitivo para que tu empresa crezca sin crecer en headcount.",
+      "primaryCta": "Agenda una demo",
+      "secondaryCta": "Ver soluciones"
+    },
+    "productsSection": {
+      "title": "Nuestros Agentes de IA",
+      "subtitle": "Tres agentes, cada uno especializado. Despliégalos individualmente o en conjunto según tu operación."
+    },
+    "why": {
+      "title": "¿Por qué Clientmetrica?",
+      "subtitle": "No vendemos tecnología. Entregamos resultados medibles desde el primer mes."
+    },
+    "cta": {
+      "headline": "¿Listo para escalar tu operación?",
+      "subheadline": "Habla con nuestro equipo y descubre qué agente se adapta mejor a tus procesos.",
+      "button": "Habla con nosotros",
+      "note": "Sin compromisos. Primera consulta gratis."
+    }
+  },
+  "products-overview": {
+    "hero": {
+      "tagline": "Soluciones",
+      "headline": "Nuestras Soluciones",
+      "subheadline": "Agentes de IA y servicios de implementación para empresas que quieren crecer sin crecer en equipo."
+    },
+    "agentsSection": {
+      "title": "Agentes de IA",
+      "subtitle": "Cada agente automatiza un dominio específico. Combínalos para cubrir toda tu operación."
+    },
+    "cybersecuritySection": {
+      "title": "Ciberseguridad",
+      "subtitle": "Protección enterprise para empresas medianas y grandes en Chile.",
+      "placeholder": "Producto en definición. Disponible próximamente."
+    },
+    "cta": {
+      "headline": "¿No sabes por dónde empezar?",
+      "subheadline": "Nuestro equipo te ayuda a identificar qué solución genera más impacto para tu negocio.",
+      "button": "Habla con nosotros"
+    }
+  },
+  "about": {
+    "hero": {
+      "tagline": "Quiénes Somos",
+      "headline": "Construimos los agentes que tu operación necesitaba.",
+      "subheadline": "Somos Clientmetrica — una empresa de productos de IA para empresas medianas y grandes en Chile."
+    },
+    "mission": {
+      "title": "Nuestra Misión"
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "subtitle": "Los principios que guían cada decisión de producto y cada conversación con clientes."
+    },
+    "cta": {
+      "headline": "¿Quieres conocernos?",
+      "button": "Contacta al equipo"
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Agenda una demo o cuéntanos tu caso. Respondemos en menos de 24 horas.",
+    "step1": {
+      "title": "¿Qué te interesa?",
+      "subtitle": "Selecciona los productos que quieres explorar."
+    },
+    "step2": {
+      "title": "Tus datos",
+      "name": "Nombre",
+      "email": "Email",
+      "company": "Empresa",
+      "role": "Cargo",
+      "submit": "Continuar",
+      "back": "Volver"
+    },
+    "step3": {
+      "title": "Agenda una reunión",
+      "subtitle": "Elige el horario que mejor te acomode."
+    }
   }
 }

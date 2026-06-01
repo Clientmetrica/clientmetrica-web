@@ -12,5 +12,88 @@
     "maty": "MATY",
     "juanito": "Juanito",
     "roboto": "Roboto"
+  },
+  "homepage": {
+    "hero": {
+      "tagline": "AI Automation",
+      "headline": "Your operation scales. Your headcount doesn't.",
+      "subheadline": "MATY, Juanito, and Roboto are AI agents that automate repetitive work so your company grows without growing your team.",
+      "primaryCta": "Book a demo",
+      "secondaryCta": "Explore solutions"
+    },
+    "productsSection": {
+      "title": "Our AI Agents",
+      "subtitle": "Three specialised agents. Deploy individually or combine them to cover your full operation."
+    },
+    "why": {
+      "title": "Why Clientmetrica?",
+      "subtitle": "We don't sell technology. We deliver measurable results from month one."
+    },
+    "cta": {
+      "headline": "Ready to scale your operation?",
+      "subheadline": "Talk to our team and find out which agent fits your processes best.",
+      "button": "Talk to us",
+      "note": "No commitments. First consultation is free."
+    }
+  },
+  "products-overview": {
+    "hero": {
+      "tagline": "Solutions",
+      "headline": "Our Solutions",
+      "subheadline": "AI Agents and implementation services for companies that want to grow without growing their team."
+    },
+    "agentsSection": {
+      "title": "AI Agents",
+      "subtitle": "Each agent automates a specific domain. Combine them to cover your full operation."
+    },
+    "cybersecuritySection": {
+      "title": "Cybersecurity",
+      "subtitle": "Enterprise-grade protection for mid-to-large companies.",
+      "placeholder": "Product in definition. Available soon."
+    },
+    "cta": {
+      "headline": "Not sure where to start?",
+      "subheadline": "Our team helps you identify which solution drives the most impact for your business.",
+      "button": "Talk to us"
+    }
+  },
+  "about": {
+    "hero": {
+      "tagline": "About Us",
+      "headline": "We build the agents your operation was waiting for.",
+      "subheadline": "We are Clientmetrica — an AI product company for mid-to-large enterprises."
+    },
+    "mission": {
+      "title": "Our Mission"
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles behind every product decision and every client conversation."
+    },
+    "cta": {
+      "headline": "Want to meet us?",
+      "button": "Contact the team"
+    }
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Book a demo or tell us about your case. We respond within 24 hours.",
+    "step1": {
+      "title": "What interests you?",
+      "subtitle": "Select the products you want to explore."
+    },
+    "step2": {
+      "title": "Your details",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "role": "Role",
+      "submit": "Continue",
+      "back": "Back"
+    },
+    "step3": {
+      "title": "Book a meeting",
+      "subtitle": "Choose the time that works best for you."
+    }
   }
 }
