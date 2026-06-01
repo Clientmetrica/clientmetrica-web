@@ -592,25 +592,15 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 **Prerequisites (blocks all pages)**
 
-- [ ] **Build `[locale]/layout.tsx`** — locale-aware lang attr, fonts, nav, footer, hreflang alternates
-  - Load Futura PT + Inter fonts
-  - Render `<Nav>` and `<Footer>` around `{children}`
-  - Set `lang={locale}` on `<html>`
-  - Add hreflang alternates in `<head>` metadata
-- [ ] **Build `Nav` component** (`src/components/layout/Nav.tsx`) — logo, links, hamburger menu, locale switcher
-  - Links: Home, Products (dropdown), About, Contact
-  - Locale switcher that preserves current page slug
-  - Mobile responsive hamburger
-- [ ] **Build `Footer` component** (`src/components/layout/Footer.tsx`) — logo, links, legal, social, copyright
-  - Logo, nav links, legal links (`privacidad`, `terminos`)
-  - Social media links
-  - Copyright: "© [year] Clientmetrica"
-- [ ] **Font setup** — purchase/license Futura PT, self-host in `public/fonts/`
+- [x] **Build `[locale]/layout.tsx`** — Inter via `next/font/google`, `NextIntlClientProvider`, `hreflang` alternates; `generateMetadata` title template set
+- [x] **Build `Nav` component** (`src/components/layout/Nav.tsx`) — sticky header, Products dropdown (AI Agents + Cybersecurity placeholder), mobile hamburger, locale switcher with path translation
+- [x] **Build `Footer` component** (`src/components/layout/Footer.tsx`) — brand-dark bg, product links, company links (privacy/terms), LinkedIn, copyright
+- [ ] **Font setup** — purchase/license Futura PT, self-host in `public/fonts/` ⚠️ BLOCKED — needs font files
   - Download WOFF2 from Adobe Fonts / MyFonts / Hoefler
   - Place in `public/fonts/FuturaPT-*.woff2`
-  - Wire into `[locale]/layout.tsx` via `next/font/local`
-- [ ] **Fix root `src/app/layout.tsx`** — currently hardcodes `lang="en"` and uses Geist fonts
-  - Update to use locale from `[locale]/layout.tsx` or redirect to `/es`
+  - Uncomment `localFont` block in `[locale]/layout.tsx` (code is already written, just stubbed)
+- [x] **Fix root `src/app/layout.tsx`** — stripped Geist fonts; uses `getLocale()` for `lang` attr; `src/app/page.tsx` redirects `/` → `/es`; `src/i18n/request.ts` defaults to `es`; dynamic import replaced with static imports for Turbopack compatibility
+- [x] **Fix async params** — `contacto/page.tsx` and `productos/[product]/page.tsx` updated to `await params` (Next.js 16)
 
 **Pages**
 

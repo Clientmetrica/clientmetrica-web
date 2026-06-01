@@ -33,13 +33,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; product: string };
+  params: Promise<{ locale: string; product: string }>;
 }): Promise<Metadata> {
-  const content = getProductContent(params.product as ProductSlug, params.locale);
+  const { locale, product } = await params;
+  const content = getProductContent(product as ProductSlug, locale);
   if (!content) return {};
 
   return {
-    title: `${content.slug.toUpperCase()} | Clientmetrica`,
+    title: content.slug.toUpperCase(),
     description: content.heroSubheadline,
     openGraph: {
       title: `${content.slug.toUpperCase()} — ${content.heroHeadline}`,
@@ -49,8 +50,13 @@ export async function generateMetadata({
 }
 
 // ─── Page ───────────────────────────────────────────────────────────────────
-export default function ProductPage({ params }: { params: { locale: string; product: string } }) {
-  const content = getProductContent(params.product as ProductSlug, params.locale);
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ locale: string; product: string }>;
+}) {
+  const { locale, product } = await params;
+  const content = getProductContent(product as ProductSlug, locale);
 
   // 404 for unknown slugs (e.g. typos, crawlers)
   if (!content) notFound();

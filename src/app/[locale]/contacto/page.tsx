@@ -20,10 +20,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactoPage({ params }: { params: { locale: string } }) {
+export default async function ContactoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   return (
     <main className="min-h-screen bg-white">
-      <ContactFunnel locale={params.locale} />
+      <ContactFunnel locale={locale} />
     </main>
   );
 }
