@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import HomepageHero from "@/components/sections/HomepageHero";
 import HomepageProducts from "@/components/sections/HomepageProducts";
 import HomepageWhy from "@/components/sections/HomepageWhy";
+import HomepageSocialProof from "@/components/sections/HomepageSocialProof";
 import HomepageCTA from "@/components/sections/HomepageCTA";
 
 export async function generateMetadata({
@@ -27,7 +28,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <HomepageHero locale={locale} />
       <HomepageProducts locale={locale} />
       <HomepageWhy locale={locale} />
-      {/* HomepageSocialProof renders when first client testimonial is approved */}
+      {/* quote prop is undefined until first client approves — component renders null */}
+      <HomepageSocialProof />
       <HomepageCTA locale={locale} />
     </>
   );

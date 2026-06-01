@@ -617,7 +617,7 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 **Content & Assets**
 
-- [ ] **Swap icon placeholders** in `ProductCapabilities.tsx` with Lucide icons
+- [x] **Swap icon placeholders** in `ProductCapabilities.tsx` with Lucide icons — full `ICON_MAP` wired (Zap, GitMerge, ShieldCheck, BarChart2, RefreshCw, Users, UserCheck, MessageCircle, Database, Bell, FileText)
 - [ ] **Drop integration SVG logos** into `public/logos/` and update `ProductIntegrations.tsx`
 - [ ] **Wire HubSpot Meetings embed** — replace `data-src` in `ContactFunnel.tsx` with real URL; uncomment `<Script>` tag
 - [ ] **Add testimonial quotes** — unlock `quote` field in product data once first client approves
