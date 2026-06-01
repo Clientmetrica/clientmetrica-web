@@ -13,7 +13,7 @@ export default function ProductHero({ content }: Props) {
   const locale = useLocale();
 
   return (
-    <section className="bg-brand-navy min-h-[540px] flex items-center">
+    <section className="bg-brand-navy min-h-135 flex items-center">
       <div className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left — copy */}
         <div>

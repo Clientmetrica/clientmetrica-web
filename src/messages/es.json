@@ -95,5 +95,41 @@
       "title": "Agenda una reunión",
       "subtitle": "Elige el horario que mejor te acomode."
     }
+  },
+  "blog": {
+    "hero": {
+      "tagline": "Blog",
+      "headline": "Recursos & Aprendizaje",
+      "subheadline": "Tendencias, tutoriales y casos de uso sobre IA para empresas."
+    },
+    "readMore": "Leer más",
+    "empty": "Próximamente nuevos artículos.",
+    "categories": {
+      "all": "Todos",
+      "tendencias": "Tendencias",
+      "tutorial": "Tutorial",
+      "caso-exito": "Caso de Éxito",
+      "producto": "Producto"
+    }
+  },
+  "use-cases": {
+    "hero": {
+      "tagline": "Casos de Uso",
+      "headline": "Casos de Uso por Industria",
+      "subheadline": "Cómo empresas de distintas industrias automatizan operaciones con Agentes de IA."
+    },
+    "industries": {
+      "all": "Todas",
+      "mineria": "Minería",
+      "retail": "Retail",
+      "salud": "Salud",
+      "manufactura": "Manufactura",
+      "servicios": "Servicios",
+      "logistica": "Logística"
+    }
+  },
+  "service": {
+    "investmentTimeline": "Plazo típico",
+    "investmentAmount": "Inversión"
   }
 }

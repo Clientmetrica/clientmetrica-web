@@ -95,5 +95,41 @@
       "title": "Book a meeting",
       "subtitle": "Choose the time that works best for you."
     }
+  },
+  "blog": {
+    "hero": {
+      "tagline": "Blog",
+      "headline": "Resources & Learning",
+      "subheadline": "Trends, tutorials, and AI use cases for enterprises."
+    },
+    "readMore": "Read more",
+    "empty": "New articles coming soon.",
+    "categories": {
+      "all": "All",
+      "tendencias": "Trends",
+      "tutorial": "Tutorial",
+      "caso-exito": "Case Study",
+      "producto": "Product"
+    }
+  },
+  "use-cases": {
+    "hero": {
+      "tagline": "Use Cases",
+      "headline": "Use Cases by Industry",
+      "subheadline": "How companies across industries automate operations with AI Agents."
+    },
+    "industries": {
+      "all": "All",
+      "mineria": "Mining",
+      "retail": "Retail",
+      "salud": "Healthcare",
+      "manufactura": "Manufacturing",
+      "servicios": "Services",
+      "logistica": "Logistics"
+    }
+  },
+  "service": {
+    "investmentTimeline": "Typical timeline",
+    "investmentAmount": "Investment"
   }
 }

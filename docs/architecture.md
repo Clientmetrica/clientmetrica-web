@@ -682,23 +682,20 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 **Pages**
 
-- [ ] **Build AI Implementation Service page** (`[locale]/servicios/implementacion/page.tsx`) — 8 sections (Hero, Problem, Approach, Package, Case study, Investment, FAQ, CTA)
-  - `generateStaticParams()` to pre-render service routes (currently one service: `implementacion`)
-  - Reuse `ProductCTA` for bottom CTA
-- [ ] **Build Blog listing** (`[locale]/blog/page.tsx`) — hero, filter, article grid, pagination
-- [ ] **Build Blog article detail** (`[locale]/blog/[slug]/page.tsx`) — header, content, author bio, related articles, CTA
-- [ ] **Build Use cases listing** (`[locale]/casos-de-uso/page.tsx`) — hero, industry filter, grid, CTA
-- [ ] **Build Use case detail** (`[locale]/casos-de-uso/[slug]/page.tsx`) — challenge, solution, results, product tags, CTA
+- [x] **Build AI Implementation Service page** — 6 sections (ServiceHero, ServiceProblem, ServiceApproach, ServicePackage, ServiceInvestment, ServiceFAQ) + ProductCTA; `generateStaticParams` pre-renders `implementacion`; `/en/services/[service]` redirects to `/es/servicios/[service]`
+- [x] **Build Blog listing** — BlogHero, BlogListing (card grid with category badge + read-time); 1 seed article in both locales
+- [x] **Build Blog article detail** — BlogArticleHeader (navy hero), BlogArticleContent (paragraph renderer); `/en/blog/[slug]` uses locale-mapped slug
+- [x] **Build Use cases listing** — UseCaseHero, UseCaseListing (card grid with industry colour coding)
+- [x] **Build Use case detail** — UseCaseDetail (challenge/solution/results/products); 1 seed case (Minería/Mining) in both locales
 
 **i18n & Copy**
 
-- [ ] **Add service keys** to `messages/` — `service.*` (page section labels)
-- [ ] **Add blog keys** to `messages/` — `blog.*` (listing labels, pagination)
-- [ ] **Add use-cases keys** to `messages/` — `use-cases.*` (filter labels)
-- [ ] **Write service copy** (Marketing/Copy) — populate `src/data/services/implementation.es.ts` and `en.ts`
-  - Include service description, approach steps, package details, case study, FAQ
-- [ ] **Write and publish articles** (Marketing/Copy) — populate `src/data/blog/`
-- [ ] **Write and publish use cases** (Marketing/Copy) — populate `src/data/use-cases/`
+- [x] **Add service keys** to `messages/` — `service.*`
+- [x] **Add blog keys** to `messages/` — `blog.*` (hero, categories, readMore, empty)
+- [x] **Add use-cases keys** to `messages/` — `use-cases.*` (hero, industries)
+- [ ] **Finalise service copy** (Marketing/Copy) — `src/data/services/implementation.*.ts` scaffolded, marked TODO
+- [ ] **Write and publish articles** (Marketing/Copy) — 1 seed article scaffolded; add more to `src/data/blog/`
+- [ ] **Write and publish use cases** (Marketing/Copy) — 1 seed case scaffolded; add more to `src/data/use-cases/`
 
 ---
 
@@ -706,23 +703,20 @@ Organized by priority tier (P1 / P2 / P3) and category. See [team ownership](#te
 
 Create placeholder routes now; defer full implementation to post-launch.
 
-- [ ] **Clients showcase** (`[locale]/clientes/page.tsx`) — hero, client grid (logos), case study links, CTA
-- [ ] **Partners** (`[locale]/partners/page.tsx`) — hero, partner grid, integration details, program info, CTA
-- [ ] **Careers** (`[locale]/carreras/page.tsx`) — hero, job listings, culture/values, apply CTA
-- [ ] **Press / Media** (`[locale]/prensa/page.tsx`) — hero, news, press kit, media assets, inquiries CTA
-
-**For now:** create minimal placeholder pages with just hero sections. Design and content TBD.
+- [x] **Clients showcase** (`[locale]/clientes/page.tsx`) — placeholder hero with "coming soon"
+- [x] **Partners** (`[locale]/partners/page.tsx`) — placeholder hero with "coming soon"
+- [x] **Careers** (`[locale]/carreras/page.tsx`) — placeholder with "no open positions" message
+- [x] **Press / Media** (`[locale]/prensa/page.tsx`) — placeholder hero with "coming soon"
 
 ---
 
 ### Utility / Legal
 
-- [ ] **Create legal data layer** — `src/data/legal/` with `privacidad` and `terminos` files
-  - Define `LegalDocument` type in `src/types/legal.ts`
-- [ ] **Build Privacy policy** (`[locale]/privacidad/page.tsx`) — static page + markdown body (CEO/COO owns content)
-- [ ] **Build Terms of service** (`[locale]/terminos/page.tsx`) — static page + markdown body (CEO/COO owns content)
-- [ ] **Auto-generate `sitemap.xml`** — via `src/app/sitemap.ts`
-- [ ] **Auto-generate `robots.txt`** — via `src/app/robots.ts`
+- [x] **Create legal data layer** — `src/types/legal.ts`, `src/data/legal/` with all 4 locale files (privacidad + terminos × es/en); `getLegalDocument(slug, locale)` loader
+- [x] **Build Privacy policy** (`[locale]/privacidad/page.tsx`) + `/en/privacy` redirect — placeholder copy, marked TODO for CEO/COO
+- [x] **Build Terms of service** (`[locale]/terminos/page.tsx`) + `/en/terms` redirect — placeholder copy, marked TODO for CEO/COO
+- [x] **Auto-generate `sitemap.xml`** — all P1, P2, legal routes with hreflang and priority weights
+- [x] **Auto-generate `robots.txt`** — allow all, disallow /api/
 
 ---
 
